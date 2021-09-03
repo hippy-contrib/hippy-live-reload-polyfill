@@ -2,7 +2,7 @@
  * polyfill for ios hippy live-reload on development environment
  */
 
-if (process.env.NODE_ENV === 'development') {
+if (['development', 'dev'].indexOf(process.env.NODE_ENV) >= 0) {
   (function () {
     function initLiveReload() {
       if (!global.WebSocket) return console.warn('websocket is unavailable for current hippy version');
