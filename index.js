@@ -1,5 +1,5 @@
 /**
- * polyfill for ios hippy live-reload on development environment
+ * polyfill script for ios hippy live-reload on development environment
  */
 
 if (['development', 'dev'].indexOf(process.env.NODE_ENV) >= 0) {
