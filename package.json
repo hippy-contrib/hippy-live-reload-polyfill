@@ -1,6 +1,6 @@
 {
   "name": "@hippy/hippy-live-reload-polyfill",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "hippy live reload polyfill",
   "main": "index.js",
   "scripts": {
