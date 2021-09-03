@@ -1,0 +1,10 @@
+*.log
+.DS_Store
+.nyc_output
+.vscode
+dist
+node_modules
+.idea/
+# core
+core/ARM
+.vs/
