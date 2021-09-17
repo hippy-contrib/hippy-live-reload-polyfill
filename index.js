@@ -1,5 +1,5 @@
 /**
- * polyfill script for ios hippy live-reload on development environment
+ * polyfill script for hippy live-reload on development environment
  */
 
 (function () {
@@ -26,12 +26,14 @@
       ws.close();
     });
   }
-  if (!global.IS_LIVE_RELOAD_INIT && Hippy.device.platform.OS === 'ios') {
+  if (!global.IS_LIVE_RELOAD_INIT) {
     // initial only once
     global.IS_LIVE_RELOAD_INIT = true;
     try {
-      initLiveReload();
-      console.info('[Live Reload Start...]');
+      global.setTimeout(() => {
+        initLiveReload();
+        console.info('[Live Reload Start...]');
+      }, 3000)
     } catch (e) {
       console.error('Hippy initLiveReload error', e);
     }
